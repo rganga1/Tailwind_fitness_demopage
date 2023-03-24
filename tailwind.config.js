@@ -1,5 +1,5 @@
 module.exports = {
-  content: ["./docs/*.html"],
+  content: ["./docs/*.{html,js,jsx}"],
   theme: {
     debugScreens: {
       position: ["top", "right"],
