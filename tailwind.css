@@ -1,7 +1,7 @@
 @import "tailwindcss/base";
 @import "tailwindcss/components";
 @import "tailwindcss/utilities";
-@import url('https://fonts.googleapis.com/css2?family=Delicious+Handrawn&display=swap');
+/* @import url('https://fonts.googleapis.com/css2?family=Delicious+Handrawn&display=swap'); */
 
 @layer base {
   h1{
@@ -13,8 +13,8 @@
   h3{
     @apply text-2xl;
   }
-  /* @font-face{
+  @font-face{
     font-family:Delicious Handrawn;
     src: url(./docs/fonts/DeliciousHandrawn-Regular.ttf)
-  } */
+  }
 }
