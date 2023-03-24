@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Delicious+Handrawn&display=swap');
+
 /*
 ! tailwindcss v3.2.7 | MIT License | https://tailwindcss.com
 */
@@ -419,22 +421,27 @@ video {
   display: none;
 }
 
-h1 {
+h1{
   font-size: 3rem;
   line-height: 1;
 }
 
-h2 {
+h2{
   font-size: 1.875rem;
   line-height: 2.25rem;
 }
 
-h3 {
+h3{
   font-size: 1.5rem;
   line-height: 2rem;
 }
 
-*, ::before, ::after {
+/* @font-face{
+    font-family:Delicious Handrawn;
+    src: url(./docs/fonts/DeliciousHandrawn-Regular.ttf)
+  } */
+
+*, ::before, ::after{
   --tw-border-spacing-x: 0;
   --tw-border-spacing-y: 0;
   --tw-translate-x: 0;
@@ -481,7 +488,7 @@ h3 {
   --tw-backdrop-sepia:  ;
 }
 
-::backdrop {
+::backdrop{
   --tw-border-spacing-x: 0;
   --tw-border-spacing-y: 0;
   --tw-translate-x: 0;
@@ -528,41 +535,41 @@ h3 {
   --tw-backdrop-sepia:  ;
 }
 
-.container {
+.container{
   width: 100%;
 }
 
-@media (min-width: 640px) {
-  .container {
+@media (min-width: 640px){
+  .container{
     max-width: 640px;
   }
 }
 
-@media (min-width: 768px) {
-  .container {
+@media (min-width: 768px){
+  .container{
     max-width: 768px;
   }
 }
 
-@media (min-width: 1024px) {
-  .container {
+@media (min-width: 1024px){
+  .container{
     max-width: 1024px;
   }
 }
 
-@media (min-width: 1280px) {
-  .container {
+@media (min-width: 1280px){
+  .container{
     max-width: 1280px;
   }
 }
 
-@media (min-width: 1536px) {
-  .container {
+@media (min-width: 1536px){
+  .container{
     max-width: 1536px;
   }
 }
 
-.debug-screens::before {
+.debug-screens::before{
   position: fixed;
   z-index: 2147483647;
   top: 0;
@@ -577,120 +584,130 @@ h3 {
   content: 'screen: _';
 }
 
-@media (min-width: 640px) {
-  .debug-screens::before {
+@media (min-width: 640px){
+  .debug-screens::before{
     content: 'screen: sm';
   }
 }
 
-@media (min-width: 768px) {
-  .debug-screens::before {
+@media (min-width: 768px){
+  .debug-screens::before{
     content: 'screen: md';
   }
 }
 
-@media (min-width: 1024px) {
-  .debug-screens::before {
+@media (min-width: 1024px){
+  .debug-screens::before{
     content: 'screen: lg';
   }
 }
 
-@media (min-width: 1280px) {
-  .debug-screens::before {
+@media (min-width: 1280px){
+  .debug-screens::before{
     content: 'screen: xl';
   }
 }
 
-@media (min-width: 1536px) {
-  .debug-screens::before {
+@media (min-width: 1536px){
+  .debug-screens::before{
     content: 'screen: 2xl';
   }
 }
 
-.mx-auto {
+.mx-auto{
   margin-left: auto;
   margin-right: auto;
 }
 
-.mt-4 {
-  margin-top: 1rem;
-}
-
-.mt-6 {
-  margin-top: 1.5rem;
-}
-
-.mt-8 {
-  margin-top: 2rem;
-}
-
-.mb-4 {
-  margin-bottom: 1rem;
-}
-
-.mb-6 {
+.mb-6{
   margin-bottom: 1.5rem;
 }
 
-.mb-8 {
-  margin-bottom: 2rem;
+.mt-4{
+  margin-top: 1rem;
 }
 
-.mb-12 {
-  margin-bottom: 3rem;
+.mt-6{
+  margin-top: 1.5rem;
 }
 
-.flex {
+.mt-8{
+  margin-top: 2rem;
+}
+
+.flex{
   display: flex;
 }
 
-.min-h-screen {
+.min-h-screen{
   min-height: 100vh;
 }
 
-.w-8\/12 {
+.w-8\/12{
   width: 66.666667%;
 }
 
-.justify-around {
+.justify-around{
   justify-content: space-around;
 }
 
-.space-x-4 > :not([hidden]) ~ :not([hidden]) {
+.space-x-4 > :not([hidden]) ~ :not([hidden]){
   --tw-space-x-reverse: 0;
   margin-right: calc(1rem * var(--tw-space-x-reverse));
   margin-left: calc(1rem * calc(1 - var(--tw-space-x-reverse)));
 }
 
-.bg-blue-800 {
+.bg-blue-800{
   --tw-bg-opacity: 1;
   background-color: rgb(30 64 175 / var(--tw-bg-opacity));
 }
 
-.bg-gray-100 {
+.bg-gray-100{
   --tw-bg-opacity: 1;
   background-color: rgb(243 244 246 / var(--tw-bg-opacity));
 }
 
-.px-6 {
+.px-6{
   padding-left: 1.5rem;
   padding-right: 1.5rem;
 }
 
-.py-8 {
+.py-8{
   padding-top: 2rem;
   padding-bottom: 2rem;
 }
 
-.text-center {
+.text-center{
   text-align: center;
 }
 
-.text-4xl {
-  font-size: 2.25rem;
-  line-height: 2.5rem;
+.font-delicious{
+  font-family: Delicious Handrawn, cursive;
 }
 
-.font-semibold {
+.font-semibold{
   font-weight: 600;
+}
+
+.tracking-wider{
+  letter-spacing: 0.05em;
+}
+
+.tracking-widest{
+  letter-spacing: 0.1em;
+}
+
+.text-zinc-400{
+  --tw-text-opacity: 1;
+  color: rgb(161 161 170 / var(--tw-text-opacity));
+}
+
+.text-zinc-700{
+  --tw-text-opacity: 1;
+  color: rgb(63 63 70 / var(--tw-text-opacity));
+}
+
+.text-zinc-800{
+  --tw-text-opacity: 1;
+  color: rgb(39 39 42 / var(--tw-text-opacity));
 }

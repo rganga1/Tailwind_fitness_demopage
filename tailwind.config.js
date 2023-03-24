@@ -4,7 +4,11 @@ module.exports = {
     debugScreens: {
       position: ["top", "right"],
     },
-    extend: {},
+    extend: {
+      fontFamily: {
+        delicious: ["Delicious Handrawn", "cursive"],
+      },
+    },
   },
   plugins: [require("tailwindcss-debug-screens")],
 };
